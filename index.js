@@ -20,7 +20,7 @@ app.get("/usuarios", async (req, res) => {
 
 app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
   res.json({
-    nome: "Danyel Inacio Batista Silva",      // Substitua pelo seu nome
+    nome: "John Lucas Ferreira Rodrigues",      // Substitua pelo seu nome
   });
   console.log("Rota / solicitada");
 });
