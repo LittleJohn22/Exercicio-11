@@ -18,7 +18,7 @@ app.use(loginRouter);
 
 app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
   res.json({
-    nome: "Gabriela de Souza Reis",      // Substitua pelo seu nome
+    nome: "John Lucas Ferreira Rodrigues",      // Substitua pelo seu nome
   });
   console.log("Rota / solicitada");
 });
