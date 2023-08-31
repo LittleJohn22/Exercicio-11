@@ -55,4 +55,4 @@ async function autenticarUsuario(email, senha) {
   const res = await client.query(query, usuario);
   return res.rows[0];
 }
-export { selectUsuarios, autenticarUsuario, selectUsuario, insertUsuario, deleteUsuario, updateUsuario };
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario};
