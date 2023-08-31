@@ -1,5 +1,6 @@
 //index.js
 import dotenv from "dotenv";
+
 dotenv.config();
 
 import express from "express";   
@@ -11,8 +12,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 import roteadorUsuario from "./routes/usuario.js";
+import roteadorLogin from "./routes/login.js";
 
 app.use(roteadorUsuario);
+app.use(loginRouter);
+app.use(roteadorLogin);
 
 app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
   res.json({

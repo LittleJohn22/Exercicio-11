@@ -1,4 +1,5 @@
 import { Router } from "express";
+import verificarAutenticacao from "../middlewares/autenticacao.js";
 const router = Router();
 
 import { selectUsuarios,
